@@ -5,5 +5,4 @@ node.js route without express
 https://codeanywhere.com/editor/
 
 # git 명령어 
-1. 원격저장소에서 땡기기
-git clone 저장소주소 저장할폴더명
+1. 원격저장소에서 땡기기 : git clone 저장소주소 저장할폴더명
