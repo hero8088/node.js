@@ -64,6 +64,6 @@ app.get('/react6', function(req, res) {
 	res.end();
 });
 
-app.listem(3000, () => {
+app.listen(3000, () => {
 	console.log("Start Node Js Server in Port 3000");
 });
