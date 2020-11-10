@@ -4,11 +4,11 @@ const config = {
     host: 'localhost',
     // Do not hard code your username and password.
     // Consider using Node environment variables.
-    user: 'hero8088',     
+    user : 'hero8088',     
     password: '8088',
     database: 'mydb',
     port: 5432,
-    ssl: true
+    ssl: false
 };
 
 const client = new pg.Client(config);
