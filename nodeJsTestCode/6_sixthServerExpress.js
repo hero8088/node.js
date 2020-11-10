@@ -7,7 +7,7 @@
 		res.redirect()	요청의 경로를 재지정합니다.
 		res.render()	보기 템플리트를 렌더링합니다.
 		res.send()	다양한 유형의 응답을 전송합니다.
-		res.sendFile	파일을 옥텟 스트림의 형태로 전송합니다.
+		res.render	파일을 옥텟 스트림의 형태로 전송합니다.
 		res.sendStatus()	응답 상태 코드를 설정한 후 해당 코드를 문자열로 표현한 내용을 응답 본문으로서 전송합니다.
  */
 
@@ -30,37 +30,37 @@ app.get('/', function(req, res) {
 });
 
 app.get('/about', function(req, res) {
-	res.sendfile('/html/about.html');
+	res.render('/html/about.html');
 	res.end();
 });
 
 app.get('/react1', function(req, res) {
-	res.sendfile('/ReactHtml/1_List.html');
+	res.render('/ReactHtml/1_List.html');
 	res.end();
 });
 
 app.get('/react2', function(req, res) {
-	res.sendfile('/ReactHtml/2_ClassInherit.html');
+	res.render('/ReactHtml/2_ClassInherit.html');
 	res.end();
 });
 
 app.get('/react3', function(req, res) {
-	res.sendfile('/ReactHtml/3_VariableSet.html');
+	res.render('/ReactHtml/3_VariableSet.html');
 	res.end();
 });
 
 app.get('/react4', function(req, res) {
-	res.sendfile('/ReactHtml/4_This_ColorChange');
+	res.render('/ReactHtml/4_This_ColorChange');
 	res.end();
 });
 
 app.get('/react5', function(req, res) {
-	res.sendfile('/ReactHtml/5_Lifecycle_Clock.html');
+	res.render('/ReactHtml/5_Lifecycle_Clock.html');
 	res.end();
 });
 
 app.get('/react6', function(req, res) {
-	res.sendfile('/ReactHtml/6_Form_Event_Lifecycle_Clock.html');
+	res.render('/ReactHtml/6_Form_Event_Lifecycle_Clock.html');
 	res.end();
 });
 
