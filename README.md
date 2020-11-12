@@ -9,7 +9,7 @@ https://expressjs.com/ko/guide/routing.html
 
 # 스마트폰으로 서버 만들어보기 (DEX를 지원하는 폰으로 하는 것이 정신건강에 이롭다.)
 https://royalturtles.tistory.com/5<br/>
-**Play Store에서 설치한 것<br/>
+<h5>Play Store에서 설치한 것</h5>
   1.Termux : ubuntu기반 환경을 제공<br/>
   2.SQL Client : command방식의 psql보다 UI방식으로 편리해서 사용<br/>
   3.Spck Editor : vim 대체 [github을 연결해 수정 내용을 반영(push)하고 다시 termux로 가서 소스를 내려(pull)받는다.]<br/>
@@ -24,7 +24,7 @@ https://royalturtles.tistory.com/5<br/>
   2.pg : postgresql을 node.js상의 객체로 사용<br/>
   3.pg-promise : pg보다 사용이 편하고 동기 처리가 가능
 
-#실행환경셋팅
+# 실행환경셋팅
 1. git clone 저장소주소 디렉토리명
 2. 디렉토리에서 npm init을 통해 package.json 생성
 
