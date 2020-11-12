@@ -16,5 +16,6 @@ client.connect(err => {
   if (err) throw err;
   else {
     console.log("connenct success!!!");
+    module.exports = client;
   }
 });
