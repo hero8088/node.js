@@ -12,6 +12,8 @@ const config = {
 
 const client = new pg.Client(config);
 
+//client를 Connect처리 후 넘겨주면 Dao에서 받아서 처리 후 Close 시킴
+
 client.connect(err => {
   if (err) throw err;
   else {

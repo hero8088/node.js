@@ -1,24 +1,17 @@
 
-const valueDao =  require('../Dao/valueSet');
+const MdCodes =  require('../Dao/Model_Codes');
 
-class MyCalculator {
+class ServiceCodes {
 	
 	constructor() {
-		this.vDao = new valueDao();
+		this.vDao = new MdCodes();
 	}
 	
-	add() {
-		return this.vDao.value1() + this.vDao.value2();
+	selectCodeList() {
+		return this.vDao.readAll;
 	}
 	
-	sub() {
-		return this.vDao.value1() - this.vDao.value2();
-	}
-	
-	stringReturn() {
-		return this.vDao.value3();
-	}
 	
 }
 
-module.exports = MyCalculator;
+module.exports = ServiceCodes;
