@@ -1,6 +1,7 @@
 const PgPromise = require('pg-promise')();
 
 class CodesModel {
+  
   constructor() {
     this.db = PgPromise("postgres://hero8088:8088@localhost:5432/mydb");
   }
@@ -24,7 +25,7 @@ class CodesModel {
   delete(id) {
     return this.db.any('DELETE FROM CODES WHERE ID = $1', id);
   }
+  
 }
 
 module.exports = CodesModel;
-
