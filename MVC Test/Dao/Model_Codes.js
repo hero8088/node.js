@@ -1,4 +1,4 @@
-const PgPromise = require('pg-promise');
+const PgPromise = require('pg-promise')();
 
 class CodesModel {
   constructor() {
@@ -27,3 +27,4 @@ class CodesModel {
 }
 
 module.exports = CodesModel;
+
