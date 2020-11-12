@@ -1,3 +1,3 @@
-const testService = require('/MVC_Test/Service/calculator.js');
+const testService = require('./MVC_Test/Service/calculator.js');
 
-testSerice.selectCodeList();
+testService.selectCodeList();
