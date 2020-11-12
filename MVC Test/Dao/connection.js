@@ -7,8 +7,7 @@ const config = {
   user: 'hero8088',
   password: '8088',
   database: 'mydb',
-  port: 5432,
-  ssl: true
+  port: 5432
 };
 
 const client = new pg.Client(config);
