@@ -1,12 +1,8 @@
 const testService = require('./MVC_Test/Service/Svc_Codes.js');
 
+const ts = new testService();
 
-
-
-async function selectCodesAll() {
-  const ts = new testService();
-  const data = await ts.selectCodeList();
+(function selectCodesAll() {
+  const data = ts.selectCodeList();
   console.dir(data);
-}
-
- selectCodesAll();
+})();
