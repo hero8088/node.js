@@ -3,7 +3,7 @@ const PgPromise = require('pg-promise')();
 class Model_Codes {
   
   constructor() {
-    this.db = new PgPromise('postgres://hero8088:8088@localhost:5432/mydb');
+    this.db = PgPromise('postgres://hero8088:8088@localhost:5432/mydb');
   }
   
   async create(param) {
@@ -13,7 +13,11 @@ class Model_Codes {
   }
   
   async readAll() {
-    return await this.db.any('SELECT * FROM CODES');
+    this.db.any('SELECT * FROM CODES').then(function(result){
+      return result
+    }).catch(function(err){
+      return next(err);
+    });
   }
   
   async read(cd) {
