@@ -14,7 +14,8 @@ class Model_Codes {
   
   async readAll() {
     this.db.any('SELECT * FROM CODES').then(function(result){
-      return result
+      console.dir(result);
+      return result;
     }).catch(function(err){
       return next(err);
     });
