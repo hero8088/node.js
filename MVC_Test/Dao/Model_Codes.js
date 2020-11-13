@@ -1,9 +1,9 @@
 const PgPromise = require('pg-promise')();
 
-class CodesModel {
+class Model_Codes {
   
   constructor() {
-    this.db = PgPromise("postgres://hero8088:8088@localhost:5432/mydb");
+    this.db = PgPromise('postgres://hero8088:8088@localhost:5432/mydb');
   }
   
   create(param) {
@@ -28,4 +28,4 @@ class CodesModel {
   
 }
 
-module.exports = CodesModel;
+module.exports = Model_Codes;
