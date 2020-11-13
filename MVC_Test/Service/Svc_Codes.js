@@ -7,8 +7,8 @@ class ServiceCodes {
 		this.vDao = new MdCodes();
 	}
 	
-	selectCodeList() {
-		const data1 = this.vDao.readAll();
+	async selectCodeList() {
+		const data1 = await this.vDao.readAll();
 		console.log(data1);
 		return data1;
 	}
