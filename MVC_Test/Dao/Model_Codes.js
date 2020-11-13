@@ -7,7 +7,9 @@ class Model_Codes {
   }
   
   create(param) {
-    return this.db.any('INSERT INTO CODES VALUES($1, $2)', [param.cd, param.cddsc]);
+    let cd = param.cd;
+    let cddsc = param.cddsc; 
+    return this.db.any('INSERT INTO CODES VALUES($1, $2)', [cd, cddsc]);
   }
   
   readAll() {
@@ -15,17 +17,17 @@ class Model_Codes {
   }
   
   read(cd) {
-    return this.db.any('SELECT * FROM CODES WHERE CD = $1', cd);
+    return this.db.any('SELECT * FROM CODES WHERE CD = $1', [cd]);
   }
   
   update(param) {
-    return this.db.any('UPDATE CODES SET CDDSC = $1 WHERE CD = $2', [param.cddsc, param.cd]);
+    let cd = param.cd;
+    let cddsc = param.cddsc;
+    return this.db.any('UPDATE CODES SET CDDSC = $1 WHERE CD = $2', [cddsc, cd]);
   }
   
   delete(id) {
-    return this.db.any('DELETE FROM CODES WHERE ID = $1', id);
+    return this.db.any('DELETE FROM CODES WHERE ID = $1', [id]);
   }
   
 }
-
-module.exports = Model_Codes;
