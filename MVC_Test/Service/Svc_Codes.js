@@ -9,7 +9,7 @@ class ServiceCodes {
 	
 	async selectCodeList() {
 		var data = await this.vDao.readAll();
-		console.log(data);
+		console.dir(data);
 		return data;
 	}
 	
