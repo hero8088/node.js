@@ -13,7 +13,7 @@ class Model_Codes {
   }
   
   async readAll() {
-    return this.db.any('SELECT * FROM CODES');
+    this.db.any('SELECT * FROM CODES').then((data)=>{return data;});
   }
   
   async read(cd) {
