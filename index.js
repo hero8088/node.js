@@ -4,7 +4,7 @@ var ts = new testService();
 
 
 async function selectCodesAll() {
-  let data = ts.selectCodeList();
+  let data = await ts.selectCodeList();
   console.dir(data);
 }
 
