@@ -1,5 +1,5 @@
 
-const MdCodes =  require('../Dao/Model_Codes');
+const MdCodes =  require('../Dao/Model_Codes.js');
 
 class ServiceCodes {
 	
@@ -8,7 +8,7 @@ class ServiceCodes {
 	}
 	
 	selectCodeList() {
-		return this.vDao.readAll;
+		return this.vDao.readAll();
 	}
 	
 	
