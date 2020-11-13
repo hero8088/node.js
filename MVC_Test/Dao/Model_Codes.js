@@ -2,8 +2,8 @@ const PgPromise = require('pg-promise')();
 
 class Model_Codes {
   
-  constructor() {
-    this.db = PgPromise('postgres://hero8088:8088@localhost:5432/mydb');
+  async constructor() {
+    this.db = await PgPromise('postgres://hero8088:8088@localhost:5432/mydb');
   }
   
   async create(param) {
