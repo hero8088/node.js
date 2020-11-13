@@ -31,3 +31,4 @@ class Model_Codes {
   }
   
 }
+module.exports = Model_Codes;
