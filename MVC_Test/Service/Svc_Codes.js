@@ -1,16 +1,14 @@
 
-//const MdCodes =  require('../Dao/Model_Codes');
+const MdCodes =  require('../Dao/Model_Codes');
 
 class ServiceCodes {
 	
 	constructor() {
-	//	this.vDao = new MdCodes();
+		this.vDao = new MdCodes();
 	}
 	
 	selectCodeList() {
-	//	return this.vDao.readAll;
-	  console.log('nodeJsTestCode');
-	  
+		return this.vDao.readAll;
 	}
 	
 	
