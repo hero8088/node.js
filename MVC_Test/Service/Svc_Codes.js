@@ -7,7 +7,7 @@ class ServiceCodes {
 		//this.vDao = new MdCodes();
 	}
 	
-	selec1tCodeList() {
+	selectCodeList() {
 	//	return this.vDao.readAll;
 	  return MdCodes.readAll;
 	  
