@@ -1,5 +1,5 @@
 
-const MdCodes =  require('../Dao/Model_Codes');
+const MdCodes =  require('../Dao/Model_Codes.js');
 
 module.exports = {
   selectAll: function(){
