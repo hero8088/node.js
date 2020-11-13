@@ -19,6 +19,7 @@ class Model_Codes {
     }).catch(function(err){
       return next(err);
     });
+    this.db.end;
   }
   
   async read(cd) {
