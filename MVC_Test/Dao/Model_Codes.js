@@ -12,12 +12,12 @@ class Model_Codes {
     return this.db.any('INSERT INTO CODES VALUES($1, $2)', [cd, cddsc]);
   }
   
-  async readAll() {
-     this.db.any('SELECT * FROM CODES').then(function(result){
+  async readAll(callback) {
+    await this.db.any('SELECT * FROM CODES').then(function(result){
       console.log(result);
-      return result;
+      return callback(result);
     }).catch(function(err){
-      return next(err);
+      return callbakc(err);
     });
   }
   
