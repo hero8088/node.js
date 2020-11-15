@@ -9,10 +9,11 @@ class ServiceCodes {
 	
 	selectCodeList() {
 		var data1;
-		this.vDao.readAll().then(function(){
+		this.vDao.readAll().then(function(result){
 		  console.log('success');
-		}).catch(function(){
-		  console.log('err');
+		  data1=result;
+		}).catch(function(err){
+		  console.log(err);
 		});
 		console.log(data1);
 		return data1;
