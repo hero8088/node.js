@@ -17,7 +17,7 @@ class Model_Codes {
       console.log(result);
       return callback(result);
     }).catch(function(err){
-      return callbakc(err);
+      return callback(err);
     });
   }
   
