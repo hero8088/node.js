@@ -12,6 +12,16 @@ class Model_Codes {
     return this.db.any('INSERT INTO CODES VALUES($1, $2)', [cd, cddsc]);
   }
   
+  readAll() {
+    this.db.any('SELECT * FROM CODES').then(function(result){
+      return new Promise((resolve, rejet) => {
+        return result;
+      });
+    }).catch(function(err){
+      return err;
+    });
+  }
+/*
   async readAll() {
     await this.db.any('SELECT * FROM CODES').then(function(result){
       console.log("dao: "+result);
@@ -20,7 +30,8 @@ class Model_Codes {
       return err;
     });
   }
-  
+
+*/  
   async read(cd) {
     return this.db.any('SELECT * FROM CODES WHERE CD = $1', [cd]);
   }
