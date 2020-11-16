@@ -13,7 +13,9 @@ class Model_Codes {
   }
   
   async readAll() {
-    return await this.db.any('SELECT * FROM CODES');
+    let obj =  await this.db.any('SELECT * FROM CODES');
+    console.log('dao: '+obj);
+    return obj;
   }
 /*
   async readAll() {
