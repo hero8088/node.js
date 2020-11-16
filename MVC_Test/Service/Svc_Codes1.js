@@ -16,11 +16,11 @@ class ServiceCodes {
 		  console.log(err);
 		});
 		console.log("마지막:"+data1);
-		//return data1;
+		return data1;
 	}
 	
 	
 }
 
-new ServiceCodes().selectCodeList();
-//module.exports = ServiceCodes;
+//new ServiceCodes().selectCodeList();
+module.exports = ServiceCodes;
