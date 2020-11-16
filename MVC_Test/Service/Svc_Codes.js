@@ -8,15 +8,8 @@ class ServiceCodes {
 	}
 	
 	async selectCodeList() {
-		var data1;
-		await this.vDao.readAll().then(function(result){
-		  console.log('success :'+result);
-		  data1=result;
-		}).catch(function(err){
-		  console.log(err);
-		});
+		var data1 =	await this.vDao.readAll();
 		console.log("마지막:"+data1);
-		return data1;
 	}
 	
 	
