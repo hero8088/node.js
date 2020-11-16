@@ -2,5 +2,9 @@
 const MdCodes =  require('../Dao/Model_Codes.js');
 const vDao = new MdCodes();
  
-const result = vDao.readAll();
-console.log(result);
+async function myService() { 
+   const result = await vDao.readAll();
+   console.log(result);
+}
+
+myService();
