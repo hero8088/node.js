@@ -13,12 +13,7 @@ class Model_Codes {
   }
   
   async readAll() {
-    await this.db.any('SELECT * FROM CODES').then(function(result){
-      console.dir('dao: '+result);
-      return result;
-    }).catch(function(err){
-      return err;
-    });
+    await this.db.any('SELECT * FROM CODES');
   }
 /*
   async readAll() {
