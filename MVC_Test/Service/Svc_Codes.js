@@ -6,4 +6,4 @@ function myService() {
    return vDao.readAll();
 }
 
-myService();
+console.log(myService());
