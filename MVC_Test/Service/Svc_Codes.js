@@ -3,7 +3,7 @@ const MdCodes =  require('../Dao/Model_Codes.js');
 const vDao = new MdCodes();
  
 async function myService() { 
-   return await vDao.readAll();
+   await vDao.readAll().then( (result) => {console.log(result);});
 }
 
-myService().then( (result) => {console.log(result);});
+myService();
