@@ -13,7 +13,7 @@ class Model_Codes {
   }
   
   async readAll() { 
-    let obj =  await this.db.any('SELECT * FROM CODES');
+    let obj =  await this.db.any('SELECT * FROM CODES').end();
     console.log('dao: '+obj);
     return obj;
   }
