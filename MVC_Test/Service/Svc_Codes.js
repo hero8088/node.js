@@ -9,3 +9,4 @@ async function myService() {
                      });
 }
 
+myService();
