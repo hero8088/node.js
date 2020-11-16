@@ -9,7 +9,7 @@ class ServiceCodes {
 	
 	selectCodeList() {
 	  let sObj = this.vDao.readAll();
-	  console.log('service: '+sObj);
+	  console.log(sObj);
 	  return sObj;
 	/*	var data1 = {};
 		await this.vDao.readAll().then(function(result){
