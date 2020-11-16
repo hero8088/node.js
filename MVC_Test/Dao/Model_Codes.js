@@ -12,8 +12,8 @@ class Model_Codes {
     return this.db.any('INSERT INTO CODES VALUES($1, $2)', [cd, cddsc]);
   }
   
-  async readAll() {
-    let obj =  await this.db.any('SELECT * FROM CODES');
+  async readAll() { 
+    var obj =  await this.db.any('SELECT * FROM CODES');
     console.log('dao: '+obj);
     return obj;
   }
