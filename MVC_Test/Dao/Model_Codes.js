@@ -12,8 +12,8 @@ class Model_Codes {
     return this.db.any('INSERT INTO CODES VALUES($1, $2)', [cd, cddsc]);
   }
   
-  readAll() {
-    this.db.any('SELECT * FROM CODES').then(function(result){
+  async readAll() {
+    await this.db.any('SELECT * FROM CODES').then(function(result){
       console.log("dao: "+result);
       return result;
     }).catch(function(err){
