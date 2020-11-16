@@ -6,4 +6,6 @@ async function myService() {
    return await vDao.readAll();
 }
 
-console.log(myService());
+myService().then(function(result){
+  console.log(result);
+});
