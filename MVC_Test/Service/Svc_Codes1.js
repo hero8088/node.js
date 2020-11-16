@@ -7,16 +7,16 @@ class ServiceCodes {
 		this.vDao = new MdCodes();
 	}
 	
-	selectCodeList() {
+	async selectCodeList() {
 		var data1 = {};
-		this.vDao.readAll().then(function(result){
+		await this.vDao.readAll().then(function(result){
 		  console.log('success :'+result);
 		  data1= {'resultList': result};
+		  return data1;
 		}).catch(function(err){
 		  console.log(err);
+		  return err;
 		});
-		console.log("마지막:"+data1);
-		return data1;
 	}
 	
 	
