@@ -8,14 +8,17 @@ class ServiceCodes {
 	}
 	
 	async selectCodeList() {
-		var data1 = {};
+	  let sObj = await this.vDao.readAll();
+	  console.log('service: '+sObj);
+	  return sObj;
+	/*	var data1 = {};
 		await this.vDao.readAll().then(function(result){
-		  console.log('success :'+result);
+		  console.log('service :'+result);
 		  return result;
 		}).catch(function(err){
 		  console.log(err);
 		  return err;
-		});
+		});*/
 	}
 	
 	
