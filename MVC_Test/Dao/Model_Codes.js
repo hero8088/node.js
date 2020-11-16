@@ -14,9 +14,8 @@ class Model_Codes {
   
   readAll() {
     this.db.any('SELECT * FROM CODES').then(function(result){
-      return new Promise((resolve, rejet) => {
-        return result;
-      });
+      console.dir('dao: '+result);
+      return result;
     }).catch(function(err){
       return err;
     });
