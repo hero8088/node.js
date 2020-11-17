@@ -9,8 +9,8 @@ const ts = new testService();
   console.log(err);
 });*/
 
-async function controller1() {
-  let sList = await ts.selectCodeList();
+function controller1() {
+  let sList =  ts.selectCodeList();
   console.log('inx:');
   console.log(sList);
 }
