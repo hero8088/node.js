@@ -10,4 +10,5 @@ const ts = new testService();
 });*/
 
 let sList = ts.selectCodeList();
+console.log('inx:');
 console.log(sList);
