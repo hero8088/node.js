@@ -13,6 +13,7 @@ ts.selectCodeList().then(function(result){
   let sList = await ts.selectCodeList();
   console.log('inx:');
   console.log(sList);
-}*/
+}
 
 controller1();
+*/
