@@ -67,4 +67,13 @@ Open your database
 You will now see the promt
  mydb=#
 
+# postgressql 명령
+pg_class : DB안에 객체정보를 가지고 있다.
+relkind컬럼에서 아래와 같이 정의하고 있다.
+r = ordinary table, 
+i = index, 
+S = sequence, 
+v = view, 
+c = composite type, 
+t = TOAST table.
 
