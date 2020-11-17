@@ -12,16 +12,15 @@ class ServiceCodes {
 	  //console.log('svc');
 	 // console.log(sObj);
 	  //return sObj;
-
+   var rsltObj;
 		await this.vDao.readAll().then(function(result){
-      let rslt = result;
+      rsltObj = result;
       console.log('service :'+result[0].cd);
-		  return rslt;
 		}).catch(function(err){
 		  console.log(err);
-		  return err;
+		  rsltObj = err;
 		});
-		return 'aaa';
+		return rsltObj;
 	}
 	
 	
