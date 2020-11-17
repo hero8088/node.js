@@ -12,8 +12,8 @@
    <h1><pre>console에 Promise { <pending> } 라고 뜨는거 에러 아니다!!! T T</pre></h1>
    내가 아무래도 무지한 상태에서는 이도 저도 안되겠다 싶어 Promsie부터 구글링 함.
   
-4. 비동기 Asynchronous : 코드를 실행 할 때 기다리지 않고 다음코드를 실행한다.
-                         성능상으로는 도움이 될지 모르겠는데 코드를 짤 때 많이 햇갈린다.
+4. 비동기 Asynchronous : 코드를 실행 할 때 기다리지 않고 다음코드를 실행한다.</br>
+                         성능상으로는 도움이 될지 모르겠는데 코드를 짤 때 많이 햇갈린다.</br>
    비동기 프로그램의 발전이력
    1. callback function : 비동기 처리 로직의 리턴값을 받기위해 사용하는데 유명한 말로 콜백지옥 이라는 말이 있다.
         https://www.w3schools.com/js/js_callback.asp
