@@ -14,7 +14,7 @@ class Model_Codes {
     let mphone = param.mphone;
     let mnick = param.mnick;
     console.log(param);  
-    return this.db.none('INSERT INTO MEMBER (MID, MPASS, MANME, MEMAIL, MPHONE, MNICK) VALUES($1, $2, $3, $4, $5, $6)', [mid, mpass, mname, memail, mphoe, mnick]);
+    return this.db.none('INSERT INTO MEMBER (MID, MPASS, MANME, MEMAIL, MPHONE, MNICK) VALUES($1, $2, $3, $4, $5, $6)', [mid, mpass, mname, memail, mphone, mnick]);
   }
 
   readAll() {
