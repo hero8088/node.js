@@ -9,7 +9,7 @@
 3. 삽질시작
    Dao.js 단독 실행시 값을 잘 리턴하는걸 확인
    Service와 Controller에서 찍은 Console.log가 예상과 틀려서 2일 삽질
-   <h1>console에 Promise { <pending> } 라고 뜨는거 에러 아니다!!! T T</h1>
+   <h1>console에 <pre>Promise { <pending> }</pre> 라고 뜨는거 에러 아니다!!! T T</h1>
    내가 아무래도 무지한 상태에서는 이도 저도 안되겠다 싶어 Promsie부터 구글링 함.
   
 4. 비동기 Asynchronous : 코드를 실행 할 때 기다리지 않고 다음코드를 실행한다.
