@@ -13,7 +13,7 @@ class ServiceCodes {
 	 // console.log(sObj);
 	  //return sObj;
 		var data1 = {};
-		await this.vDao.readAll().then(function(result){
+		this.vDao.readAll().then(function(result){
 		  console.log('service :'+result);
 		  return result;
 		}).catch(function(err){
