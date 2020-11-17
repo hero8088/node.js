@@ -14,7 +14,7 @@ async selectCodeList() {
 	  //return sObj;
 		var data1 = {};
 		await this.vDao.readAll().then(function(result){
-		  console.log('service :'+result);
+		  console.log('service :'+result[0].cd);
 		  return result;
 		}).catch(function(err){
 		  console.log(err);
