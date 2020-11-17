@@ -7,13 +7,13 @@ class ServiceCodes {
 		this.vDao = new MdCodes();
 	}
 	
- selectCodeList() {
+async selectCodeList() {
 	  //let sObj = this.vDao.readAll();
 	  //console.log('svc');
 	 // console.log(sObj);
 	  //return sObj;
 		var data1 = {};
-		this.vDao.readAll().then(function(result){
+		await this.vDao.readAll().then(function(result){
 		  console.log('service :'+result);
 		  return result;
 		}).catch(function(err){
