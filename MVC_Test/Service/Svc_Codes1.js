@@ -13,10 +13,10 @@ async selectCodeList() {
 	 // console.log(sObj);
 	  //return sObj;
 
-		await this.vDao.readAll().then(function(result){
-      let rslt = result;
+		this.vDao.readAll().then(function(result){
+      let rslt = await result;
       console.log('service :'+result[0].cd);
-		  return await rslt;
+		  return rslt;
 		}).catch(function(err){
 		  console.log(err);
 		  return err;
