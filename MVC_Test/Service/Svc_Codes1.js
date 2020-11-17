@@ -16,7 +16,7 @@ async selectCodeList() {
 		await this.vDao.readAll().then(function(result){
       let rslt = result;
       console.log('service :'+result[0].cd);
-		  return rslt;
+		  return await rslt;
 		}).catch(function(err){
 		  console.log(err);
 		  return err;
