@@ -1,4 +1,4 @@
-const testService = require('./MVC_Test/Service/Svc_Codes1.js');
+const testService = require('./MVC_Test/Service/Svc_Codes.js');
 
 const ts = new testService();
 

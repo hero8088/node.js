@@ -1,11 +1,30 @@
 
 const MdCodes =  require('../Dao/Model_Codes.js');
-const vDao = new MdCodes();
- 
- function myService() { 
-    vDao.readAll()
-        .then( result => {console.log(result);})
-        .catch( err => {console.log(err)});
+
+class ServiceCodes {
+	
+	constructor() {
+		this.vDao = new MdCodes();
+	}
+	
+	async selectCodeList() {
+	  //let sObj = this.vDao.readAll();
+	  //console.log('svc');
+	 // console.log(sObj);
+	  //return sObj;
+   var rsltObj;
+		await this.vDao.readAll().then(function(result){
+      rsltObj = result;
+      console.log('service :'+result[0].cd);
+		}).catch(function(err){
+		  console.log(err);
+		  rsltObj = err;
+		});
+		return rsltObj;
+	}
+	
+	
 }
 
-myService();
+//new ServiceCodes().selectCodeList();
+module.exports = ServiceCodes;
