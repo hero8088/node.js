@@ -21,10 +21,10 @@ class ServiceCodes {
 	async selectById() {
 	  var rsltObj;
 	  var mid = "user3";
-	  await this.daoMember.read(mid).then(function() {
+	  await this.daoMember.read(mid).then(function(result) {
       rsltObj = result;
       console.log(result);
-	  }).catch(function() {
+	  }).catch(function(err) {
       rsltObj = err;
 	  });
 	}
