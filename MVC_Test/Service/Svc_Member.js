@@ -9,7 +9,7 @@ class ServiceCodes {
 	
 	async selectAll() {
     var rsltObj;
-		await this.vDao.readAll().then(function(result){
+		await this.daoMember.readAll().then(function(result){
       rsltObj = result;
       console.log(result);
 		}).catch(function(err){
