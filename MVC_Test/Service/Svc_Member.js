@@ -8,15 +8,25 @@ class ServiceCodes {
 	}
 	
 	async selectAll() {
-   var rsltObj;
+    var rsltObj;
 		await this.vDao.readAll().then(function(result){
       rsltObj = result;
-      console.log('service :'+result[0].cd);
+      console.log(result);
 		}).catch(function(err){
-		  console.log(err);
 		  rsltObj = err;
 		});
 		return rsltObj;
+	}
+	
+	async selectById() {
+	  var rsltObj;
+	  var mid = "user3";
+	  await this.daoMember.read(mid).then(function() {
+      rsltObj = result;
+      console.log(result);
+	  }).catch(function() {
+      rsltObj = err;
+	  });
 	}
 	
 	async insertGo() {
@@ -65,16 +75,10 @@ class ServiceCodes {
 	  });
 	}
 	
-	async selectById() {
-	  await this.daoMember.read().then(function() {
-	
-	  }).catch(function() {
-	
-	  });
-	}
+
 	
 	
 }
 
-new ServiceCodes().deleteGo();
+new ServiceCodes().selectById();
 //module.exports = ServiceCodes;
