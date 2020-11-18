@@ -80,5 +80,5 @@ class ServiceCodes {
 	
 }
 
-new ServiceCodes().selectById();
+new ServiceCodes().selectAll();
 //module.exports = ServiceCodes;
