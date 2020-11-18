@@ -34,6 +34,7 @@ class Model_Codes {
     let memail = param.memail;
     let mphone = param.mphone;
     let mnick = param.mnick;
+    console.log(param);
     return this.db.any('UPDATE MEMBER SET MPASS = $1, MNAME = $2, MEMAIL = $3, MPHONE = $4, MNICK $5 WHERE CD = $6', [ mpass, mname, memail, mphoe, mnick, mid]);
   }
 

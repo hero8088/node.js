@@ -39,11 +39,20 @@ class ServiceCodes {
 	}
 	
 	async updateGo() {
-	  await this.daoMember.update().then(function() {
-	
-	  }).catch(function() {
-	
-	  });
+	  var rsltObj;
+	  var params={};
+	  params.mid = "user3";
+	  params.mpass = "1111";
+	  params.mname = "Test User3";
+	  params.memail = "user3@mail.com";
+	  params.mphone = "0805004949";
+	  params.mnick = "baby";
+	  
+	  await this.daoMember.update(params).then(function() {
+	     rsltObj = "success";
+    }).catch(function(err) {
+       rsltObj = err;
+    });
 	}
 	
 	async deleteGo() {
@@ -65,5 +74,5 @@ class ServiceCodes {
 	
 }
 
-new ServiceCodes().insertGo();
+new ServiceCodes().updateGo();
 //module.exports = ServiceCodes;
