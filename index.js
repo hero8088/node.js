@@ -1,19 +1,17 @@
-const testService = require('./MVC_Test/Service/Svc_Codes1.js');
+const express=require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const port = 3000;
 
-const ts = new testService();
+const contrller = require('./MVC_Test/Controller/Controller.js');
 
-ts.selectCodeList().then(function(result){
-  console.log('inx:');
-  console.log(result);
-}).catch(function(err){
-  console.log(err);
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use('/member', controller);
+
+app.listen(port, function(){
+  console.log("server is running port 3000");
 });
 
-/*async function controller1() {
-  let sList = await ts.selectCodeList();
-  console.log('inx:');
-  console.log(sList);
-}
-
-controller1();
-*/
+module.exports = app;

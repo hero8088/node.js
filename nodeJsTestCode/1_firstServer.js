@@ -9,6 +9,6 @@ function doRequest(req, res) {
 	res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
 	res.write('<h1>Hello World</h1>');
 	res.write('<hr/>');
-	res.write('<h6>node js Ã¹¹øÂ° ¿¹Á¦ ÀÔ´Ï´Ù.</h6>');
+	res.write('<h6>node js Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.</h6>');
 	res.end();
 }
