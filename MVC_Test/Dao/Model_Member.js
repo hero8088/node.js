@@ -39,7 +39,7 @@ class Model_Codes {
   }
 
   delete(mid) {
-    return this.db.any('DELETE FROM MEMBER WHERE MID = $1', [mid]);
+    return this.db.delete('DELETE FROM MEMBER WHERE MID = $1', [mid]);
   }
 
 }
