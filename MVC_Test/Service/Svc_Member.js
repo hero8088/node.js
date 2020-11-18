@@ -22,7 +22,7 @@ class ServiceCodes {
 	async insertGo() {
 	  var insertCnt;
 	  var params={};
-	  params.mid = "user1";
+	  params.mid = "user2";
 	  params.mpass = "1111";
 	  params.mname = "Test User";
 	  params.memail = "user1@mail.com";
@@ -30,6 +30,7 @@ class ServiceCodes {
 	  params.mnick = "";
 	  
 	  await this.daoMember.create(params).then(function(result){
+       console.log(result);
        insertCnt = result;
 	  }).catch(function(err){
 	     insertCnt = err;
