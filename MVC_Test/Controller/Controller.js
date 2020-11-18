@@ -1,19 +1,14 @@
-const testService = require('../Service/Svc_Codes.js');
+const memberService = require('../Service/Svc_Member.js');
+const express = require('express');
+const app = express()
 
-const ts = new testService();
+const ms = new memberService();
 
-ts.selectCodeList().then(function(result){
-  console.log('inx:');
-  console.log(result);
-}).catch(function(err){
-  console.log(err);
+app.get('/', function(res,res){
+  ms.selectAll().then(function(result) {
+    console.log(result);
+    res.send(result);
+  }).catch(function(err) {
+    console.log(err);
+  });
 });
-
-/*async function controller1() {
-  let sList = await ts.selectCodeList();
-  console.log('inx:');
-  console.log(sList);
-}
-
-controller1();
-*/
