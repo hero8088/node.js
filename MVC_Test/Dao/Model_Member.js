@@ -24,7 +24,7 @@ class Model_Codes {
   }
   
   read(mid) {
-    return this.db.any('SELECT * FROM MEMBER WHERE CD = $1', [mid]);
+    return this.db.any('SELECT * FROM MEMBER WHERE Mid = $1', [mid]);
   }
 
   update(param) {
