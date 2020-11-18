@@ -58,10 +58,9 @@ class ServiceCodes {
 	async deleteGo() {
 	  var rsltObj;
 	  var mid = "user2";
-	  await this.daoMember.delete(mid).then(function(result) {
-	    console.log(result);
+	  await this.daoMember.delete(mid).then(function() {
 	    rsltObj = "success";
-	  }).catch(function() {
+	  }).catch(function(err) {
 	    rsltObj = err;
 	  });
 	}
