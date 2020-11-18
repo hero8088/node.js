@@ -20,9 +20,9 @@ class ServiceCodes {
 	}
 	
 	async insertGo() {
-	  var insertCnt;
+	  var rsltObj;
 	  var params={};
-	  params.mid = "user2";
+	  params.mid = "user3";
 	  params.mpass = "1111";
 	  params.mname = "Test User";
 	  params.memail = "user1@mail.com";
@@ -30,12 +30,12 @@ class ServiceCodes {
 	  params.mnick = "";
 	  
 	  await this.daoMember.create(params).then(function(result){
-       console.log(result);
-       insertCnt = result;
+       //return null
+       rsltObj = "success";
 	  }).catch(function(err){
-	     insertCnt = err;
+	     rsltObj = err;
 	  });
-	  return insertCnt;
+	  return rsltObj;
 	}
 	
 	async updateGo() {
