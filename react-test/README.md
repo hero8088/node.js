@@ -1,3 +1,6 @@
+## Back-End : node.js/Express,  Front-End : React
+   개발 방향 : react에서 Back-End쪽 데이터를 받아서 Render() 해준다.
+
 ## react project생성
 1. npm install -g create-react-app
 2. create-react-app 프로젝트 폴더명
