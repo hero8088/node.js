@@ -7,7 +7,7 @@ const ms = new memberService();
     router.get('/', function(res,res){
       ms.selectAll().then(function(result) {
         console.log(result);
-        res.json(result);
+        res.send(result);
       }).catch(function(err) {
         console.log(err);
       });
