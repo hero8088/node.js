@@ -1,7 +1,7 @@
 const express=require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const port = 3000;
+const port = 3030;
 
 const controller = require('./MVC_Test/Controller/Controller.js');
 
@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/member', controller);
 
 app.listen(port, function(){
-  console.log("server is running port 3000");
+  console.log("server is running port 3030");
 });
 
 module.exports = app;
