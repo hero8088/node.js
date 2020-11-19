@@ -12,3 +12,6 @@
 && : 하나가 정상적으로 실행 되고 난 후 다음 명령 실행 (서버실행명령은 제어권이 넘어가는지 다음명령이 실행되지 않았다)</br>
 ; : 성공여부 관계없이 실행 (이것도 제어권이 넘어가는지 다음 명령이 실행되지 않았음)</br>
 console확인을 위해서는 termux를 두개를 띄울 방법을 찾아야 함.
+
+## React Styling
+https://velog.io/@velopert/react-component-styling
