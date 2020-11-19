@@ -23,6 +23,7 @@ https://royalturtles.tistory.com/5<br/>
   1.Express<br/>
   2.pg : postgresql을 node.js상의 객체로 사용<br/>
   3.pg-promise : pg보다 사용이 편하고 동기 처리가 가능
+  4.body-parser : json
 
 # 실행환경셋팅
 1. git clone 저장소주소 디렉토리명
