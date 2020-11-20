@@ -13,10 +13,10 @@
 	  render() {
 	    return (
 	      <div>
-			    					<h1>{state}</h1>
-			    				</div>
+					<h1>{state}</h1>
+				</div>
 	    );
 	  }
 	}
 
-	export defaul Member  ;
+	export default Member;
