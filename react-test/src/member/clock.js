@@ -1,4 +1,6 @@
-		class Clock extends React.Component {
+	import Rect, {Component} from 'react';
+	
+		class Clock extends Component {
 			    constructor() {
 			      this.state = { ate: new Date() };
 			      this.str = "why not"
