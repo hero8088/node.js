@@ -1,4 +1,4 @@
-		class Clock {
+		class Clock extends React.Component {
 			    constructor() {
 			      this.state = { ate: new Date() };
 			      this.str = "why not"
@@ -23,7 +23,7 @@
 			    render() {
 			      return (
 			        <div>
-			    					<h1>It is {this.str}.</h1>
+			    					<h1>It is {str}.</h1>
 			    				</div>
 			      );
 			    }
