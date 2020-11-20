@@ -78,3 +78,6 @@ v = view,
 c = composite type, 
 t = TOAST table.
 
+# 모바일환경에서 DEBUG
+https://medium.com/@rabter/%EB%AA%A8%EB%B0%94%EC%9D%BC-%ED%81%AC%EB%A1%AC-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0-f56a12a68538
+
