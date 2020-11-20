@@ -11,9 +11,10 @@
 	  }
 
 	  render() {
+	    console.log(this.stats);
 	    return (
 	      <div>
-					<h1>{this.state}</h1>
+					<h1>{this.state.resultList}</h1>
 				</div>
 	    );
 	  }
