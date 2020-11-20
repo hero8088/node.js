@@ -1,14 +1,29 @@
 		class Clock {
+			    constructor() {
+			      this.state = { ate: new Date() };
+			    }
+			    
+			    componentDidMount() {
+			      this.timerID = setInterval(
+			        () => this.tick(), 1000
+			      );
+			    }
+			    
+			    componentWillUnmount() {
+			      clearInterval(this.timerID);
+			    }
+			    
+			    tick() {
+			      this.setState({
+			        ate: new Date()
+			      });
+			    }
+			    
 			    render() {
 			      return (
-			        <div className = "shopping-list">
-						<h1>Shopping List </h1>
-						<ul>
-							<li>Instagram</li>
-							<li>WhatsApp</li>
-							<li>Oculus</li>
-						</ul>
-					</div>
+			        <div>
+			    					<h1>It is {this.state.ate.toLocaleTimeString()}.</h1>
+			    				</div>
 			      );
 			    }
 		}
