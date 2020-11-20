@@ -12,6 +12,7 @@
 	    fetch("http://localhost:3030/member")
 	    .then(res => res.json())
 	    .then(data => {
+	      console.log('-------------------');
 	     console.log(data);
 	     this.setState({
 	      retValue: data
