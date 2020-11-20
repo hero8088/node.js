@@ -5,11 +5,9 @@ import './index.css';
 import Clock from './member/clock'
 import reportWebVitals from './reportWebVitals';
 
-const instanceClock = new Clock();
-
 ReactDOM.render(
   <React.StrictMode>
-    <instanceClock />
+    <Clock />
   </React.StrictMode>,
   document.getElementById('root')
 );
