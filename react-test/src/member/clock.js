@@ -1,4 +1,4 @@
-		class Clock extends React.Component {
+		class Clock extends {
 			    render() {
 			      return (
 			        <div className = "shopping-list">
