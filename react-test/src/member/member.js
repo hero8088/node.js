@@ -10,7 +10,6 @@
 
 	  componentWillMount() {
 	    fetch("http://localhost:3030/member")
-	    .then(res => res.json())
 	    .then(data => {console.log(data)});
 	  }
 
@@ -27,7 +26,7 @@
 	 */
 	    return (
 	      <div>
-					<h1>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</h1>
+					<h1>aaaaaaaaxxxxxxxxxxxxxxx</h1>
 				</div>
 	    );
 	  }
