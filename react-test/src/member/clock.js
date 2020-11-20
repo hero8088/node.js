@@ -1,5 +1,6 @@
 		class Clock {
 			    constructor() {
+			      super();
 			      this.state = { ate: new Date() };
 			    }
 			    
