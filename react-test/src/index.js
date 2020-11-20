@@ -5,9 +5,11 @@ import App from './App';
 import Clock from './member/clock'
 import reportWebVitals from './reportWebVitals';
 
+const clk = new Clock();
+
 ReactDOM.render(
   <React.StrictMode>
-    <Clock />
+    <clk />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
