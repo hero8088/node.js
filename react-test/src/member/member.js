@@ -17,9 +17,8 @@
 	  }
 
 	  render() {
-	    console.log('--------------------------------------');
+	   
 	    const {members} = this.state;
-	    console.dir(members);
 	    return (
 	      <div>
 					<h1>{members}</h1>
