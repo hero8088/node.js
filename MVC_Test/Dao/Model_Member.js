@@ -19,7 +19,7 @@ class Model_Codes {
 
   readAll() {
     let obj = this.db.any('SELECT * FROM MEMBER');
-    console.log('dao: ' + obj);
+    //console.log('dao: ' + obj);
     return obj;
   }
   

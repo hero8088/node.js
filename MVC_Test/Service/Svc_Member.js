@@ -11,7 +11,7 @@ class ServiceCodes {
     var rsltObj;
 		await this.daoMember.readAll().then(function(result){
       rsltObj = result;
-      console.log(result);
+     // console.log(result);
 		}).catch(function(err){
 		  rsltObj = err;
 		});
