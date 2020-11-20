@@ -3,7 +3,7 @@
 	class Member extends Component {
 	  constructor(props) {
 	    super(props);
-	    state = {};
+	    this.state = {};
 	  }
 
 	  componentDidMount() {
@@ -13,7 +13,7 @@
 	  render() {
 	    return (
 	      <div>
-					<h1>{state}</h1>
+					<h1>{this.state}</h1>
 				</div>
 	    );
 	  }
