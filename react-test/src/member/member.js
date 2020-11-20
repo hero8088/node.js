@@ -18,10 +18,10 @@
 
 	  render() {
 	    console.log('--------------------------------------');
-	    console.dir(this.state);
+	    console.dir(this.state.retValue);
 	    return (
 	      <div>
-					<h1>{this.state}</h1>
+					<h1>{this.state.retValue}</h1>
 				</div>
 	    );
 	  }
