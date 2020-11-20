@@ -14,7 +14,7 @@
 	    console.log(this.stats);
 	    return (
 	      <div>
-					<h1>{this.state.resultList}</h1>
+					<h1>{this.state[0]}</h1>
 				</div>
 	    );
 	  }
