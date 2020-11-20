@@ -11,7 +11,8 @@
 	  }
 
 	  render() {
-	    console.log(this.stats);
+	    console.log('--------------------------------------');
+	    console.dir(this.stats);
 	    return (
 	      <div>
 					<h1>{this.state[0]}</h1>
