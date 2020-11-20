@@ -6,7 +6,7 @@
 	    this.state = {};
 	  }
 
-	  componentDidMount() {
+	  componentWillMount() {
 	    fetch("http://localhost:3030/member")
 	  }
 
