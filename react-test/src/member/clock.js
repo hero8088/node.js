@@ -11,5 +11,6 @@
 					</div>
 			      );
 			    }
+		}
 
 export default Clock;
