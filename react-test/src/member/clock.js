@@ -20,7 +20,7 @@ class Clock {
 	    });
 	  }
 
-	  render() {
+	 disp () {
 	    return (
 	      <div>
 					<h1>It is {this.state.ate.toLocaleTimeString()}.</h1>
