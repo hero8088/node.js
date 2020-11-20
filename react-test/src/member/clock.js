@@ -25,7 +25,7 @@
 			    render() {
 			      return (
 			        <div>
-			    					<h1>It is {str}.</h1>
+			    					<h1>It is {this.str}.</h1>
 			    				</div>
 			      );
 			    }
