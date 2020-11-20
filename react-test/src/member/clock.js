@@ -1,7 +1,6 @@
 
 class Clock {
-	  constructor(props) {
-	    super(props);
+	  constructor() {
 	    this.state = { ate: new Date() };
 	  }
 
