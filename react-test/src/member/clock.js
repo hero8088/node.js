@@ -20,7 +20,7 @@ class Clock {
 	    });
 	  }
 
-	 disp () {
+	  render() {
 	    return (
 	      <div>
 					<h1>It is {this.state.ate.toLocaleTimeString()}.</h1>
@@ -29,4 +29,4 @@ class Clock {
 	  }
 	}
 
-export default Clock;
+export Clock;
