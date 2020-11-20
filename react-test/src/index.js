@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Clock from './member/clock'
+import Member from './member/member'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Clock />
+    <Member />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
