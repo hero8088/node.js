@@ -1,4 +1,4 @@
-		class Clock extends {
+		class Clock {
 			    render() {
 			      return (
 			        <div className = "shopping-list">
