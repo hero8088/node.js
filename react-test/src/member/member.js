@@ -19,9 +19,16 @@
 	  render() {
 	   
 	    const {members} = this.state;
+	    const memberList = members.map((member) => (
+	        <div>
+	          <p>{member.mid}</p>
+	          <p>{member.mname}</p>
+	          <p>{member.memail}</p>
+	        </div>
+	      ));
 	    return (
 	      <div>
-					<h1>{members}</h1>
+					<h1>{memberList}</h1>
 				</div>
 	    );
 	  }
