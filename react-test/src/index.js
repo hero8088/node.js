@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import Clock from './member/clock'
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +9,6 @@ const clk = new Clock();
 ReactDOM.render(
   <React.StrictMode>
     <clk />
-    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
