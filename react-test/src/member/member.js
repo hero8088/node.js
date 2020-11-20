@@ -1,4 +1,4 @@
-	import Rect, { Component } from 'react';
+	import React, { Component } from 'react';
 
 	class Member extends Component {
 	  constructor(props) {
