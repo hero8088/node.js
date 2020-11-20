@@ -10,7 +10,12 @@
 
 	  componentWillMount() {
 	    fetch("http://localhost:3030/member")
-	    .then(data => {console.log(data)});
+	    .then(function(data){
+	      console.log(data);
+	    })
+	    .catch(function(err){
+	      console.log(err);
+	    });
 	  }
 
 	  render() {
