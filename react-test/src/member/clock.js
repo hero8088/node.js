@@ -26,7 +26,7 @@
 			    render() {
 			      return (
 			        <div>
-			    					<h1>It is {this.str}.</h1>
+			    					<h1>It is {this.state.ate.toLocaleTimeString()}.</h1>
 			    				</div>
 			      );
 			    }
