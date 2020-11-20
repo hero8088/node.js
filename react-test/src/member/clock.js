@@ -1,5 +1,5 @@
 
-class Clock extends React.Component {
+class Clock {
 	  constructor(props) {
 	    super(props);
 	    this.state = { ate: new Date() };
