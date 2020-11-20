@@ -1,32 +1,15 @@
-
- class Clock {
-	  constructor() {
-	    this.state = { ate: new Date() };
-	  }
-
-	  componentDidMount() {
-	    this.timerID = setInterval(
-	      () => this.tick(), 1000
-	    );
-	  }
-
-	  componentWillUnmount() {
-	    clearInterval(this.timerID);
-	  }
-
-	  tick() {
-	    this.setState({
-	      ate: new Date()
-	    });
-	  }
-
-	  render() {
-	    return (
-	      <div>
-					<h1>It is {this.state.ate.toLocaleTimeString()}.</h1>
-				</div>
-	    );
-	  }
-	}
+		class Clock extends React.Component {
+			    render() {
+			      return (
+			        <div className = "shopping-list">
+						<h1>Shopping List for {this.props.name}</h1>
+						<ul>
+							<li>Instagram</li>
+							<li>WhatsApp</li>
+							<li>Oculus</li>
+						</ul>
+					</div>
+			      );
+			    }
 
 export default Clock;
