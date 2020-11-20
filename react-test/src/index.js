@@ -9,7 +9,7 @@ const instanceClock = new Clock();
 
 ReactDOM.render(
   <React.StrictMode>
-    <instanceClock.render />
+    <instanceClock />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
