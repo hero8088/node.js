@@ -11,9 +11,12 @@
 	  componentWillMount() {
 	    fetch("http://localhost:3030/member")
 	    .then(res => res.json())
-	    .then(data => this.setState({
+	    .then(data => {
+	     console.log(data);
+	     this.setState({
 	      retValue: data
-	    }));
+	      });
+	    });
 	  }
 
 	  render() {
