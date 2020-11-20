@@ -1,5 +1,5 @@
 
-class Clock {
+export class Clock {
 	  constructor() {
 	    this.state = { ate: new Date() };
 	  }
@@ -28,5 +28,3 @@ class Clock {
 	    );
 	  }
 	}
-
-export Clock;
