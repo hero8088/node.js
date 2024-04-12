@@ -1,3 +1,6 @@
+# npm을 최신 버전으로 업데이트 하기 : npm install -g npm@latest
+
+
 # node.js
 node.js route without express
 
